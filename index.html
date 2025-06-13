@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Divine foods">
+	<meta name="keywords" content="food, divine, breakfast, lunch, supper">
+	<meta name="author" content="Morris">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
 	<title>Divine Foods</title>
+	<link rel="icon" type="image/x-icon" href="/images/foodfav.jpg">
+	<link rel="stylesheet" href="style.css">
+	
 	<style>
+		td,th{
+			border: 2px solid red;
+			text-align: center;
+		}
+		tr:hover{
+			background-color: #0000ff;
+		}
+		tr:nth-child(even){
+			background-color: #dddddd;
+		}
+
 		li{
 			text-align:center;
 			align-items: center;
@@ -28,13 +48,32 @@
 	<h2 style="font-size:200%;">PLACE YOUR ORDER</h2>
 	<p><a href="#1">Breakfast</a> <a href="#2">Lunch</a> <a href="#3">Supper</a></p>
 	<p><head id="1"><b><i>Breakfast</i></b></head></p>	
-	<p><ul style="text-align: center;align-items: center;border: 2px black solid;"><li style="text-align:center;">Milk<sup>1</sup></li><li>Porridge<sup>2</sup></li><li>Coffee<sup>3</sup></li></ul></p>
+	<p><ul style="text-align: center;list-style-type:square;align-items: center;border: 2px black solid;"><li style="text-align:center;">Milk<sup>1</sup></li><li>Porridge<sup>2</sup></li><li>Coffee<sup>3</sup></li></ul></p>
 		<head id="2"><b>Lunch</b></head>
 		<ol style="border:2px black solid;"><li>Matooke</li><li><em><mark>Rice</mark></em></li><li>Posho</li></ol>
 		<head id="3"><b>Supper</b></head>
 		<p style="border:2px black solid;">Matooke<br>Rice<br>Posho<br></p>
 	</p>
+	<table style="width: 100%;border-collapse: collapse;">
+		<caption>We offer</caption>
+		<colgroup>
+			<col span="2"; style="background-color: #ddd;">
+		</colgroup>
+		<tr>
+			<th>BREAKFAST</th>
+			<th>LUNCH</th>
+			<th>SUPPER</th>
+		</tr>
+		<tr>
+			<td>Katogo</td>
+			<td>Fish</td>
+			<td>Chips</td>
+		</tr>
+
+	</table>
 	<h2>CONTACT US</h2>
 	<p><a href="mailto:moreece14@gmail.com">e-mail: MORRIS</a></p>
+	<iframe src="iframe.html" name="moreece14" title="iframe-example"></iframe>
+	<p><a href="https://www.example.com" target="moreece14">click here</a></p>
 </body>
 </html>
